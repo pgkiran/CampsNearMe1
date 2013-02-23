@@ -1,0 +1,10 @@
+
+#define SPORTS_CAMP 1
+#define MUSIC_CAMP 2
+#define ARTS_CAMP 3
+#define EDUCATION_CAMP 4
+#define ADVENTURE_CAMP 5
+#define SPECIAL_CAMP 6
+#define TECHNOLOGY_CAMP 7
+#define OVERNIGHT_CAMP 8
+#define OTHER_CAMP 9
