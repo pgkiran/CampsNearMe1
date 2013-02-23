@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CampType : UIView
+@protocol CampTypeDelegate
+-(void) listOfCamps:(int)campType;
+@end
+@interface CampTypeView : UIView
 @property (nonatomic, assign) int campType;
+@property (nonatomic, assign) id <CampTypeDelegate> delegate;
 @end

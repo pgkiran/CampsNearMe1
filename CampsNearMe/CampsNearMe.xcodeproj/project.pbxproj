@@ -177,7 +177,9 @@
 		B144304F16D82A1900B7BB64 /* icn_place_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1442FB216D82A1900B7BB64 /* icn_place_pin@2x.png */; };
 		B144305016D82A1900B7BB64 /* icn_search.png in Resources */ = {isa = PBXBuildFile; fileRef = B1442FB316D82A1900B7BB64 /* icn_search.png */; };
 		B144305116D82A1900B7BB64 /* icn_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1442FB416D82A1900B7BB64 /* icn_search@2x.png */; };
-		B144306116D8384100B7BB64 /* CampType.m in Sources */ = {isa = PBXBuildFile; fileRef = B144306016D8383E00B7BB64 /* CampType.m */; };
+		B144306116D8384100B7BB64 /* CampTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B144306016D8383E00B7BB64 /* CampTypeView.m */; };
+		B144306916D8AFD200B7BB64 /* CampListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B144306716D8AFCB00B7BB64 /* CampListViewController.m */; };
+		B144306A16D8AFD200B7BB64 /* CampListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B144306816D8AFCF00B7BB64 /* CampListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -357,9 +359,12 @@
 		B1442FB216D82A1900B7BB64 /* icn_place_pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_place_pin@2x.png"; sourceTree = "<group>"; };
 		B1442FB316D82A1900B7BB64 /* icn_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_search.png; sourceTree = "<group>"; };
 		B1442FB416D82A1900B7BB64 /* icn_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_search@2x.png"; sourceTree = "<group>"; };
-		B144305F16D8383B00B7BB64 /* CampType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampType.h; sourceTree = "<group>"; };
-		B144306016D8383E00B7BB64 /* CampType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampType.m; sourceTree = "<group>"; };
+		B144305F16D8383B00B7BB64 /* CampTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampTypeView.h; sourceTree = "<group>"; };
+		B144306016D8383E00B7BB64 /* CampTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampTypeView.m; sourceTree = "<group>"; };
 		B144306516D83A8B00B7BB64 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		B144306616D8AFC300B7BB64 /* CampListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampListViewController.h; sourceTree = "<group>"; };
+		B144306716D8AFCB00B7BB64 /* CampListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampListViewController.m; sourceTree = "<group>"; };
+		B144306816D8AFCF00B7BB64 /* CampListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,9 +421,12 @@
 				B1442F0A16D828F100B7BB64 /* CampFavoritesViewController.h */,
 				B1442F0B16D828F100B7BB64 /* CampFavoritesViewController.m */,
 				B1442F0C16D828F200B7BB64 /* CampFavoritesViewController.xib */,
-				B144305F16D8383B00B7BB64 /* CampType.h */,
-				B144306016D8383E00B7BB64 /* CampType.m */,
+				B144305F16D8383B00B7BB64 /* CampTypeView.h */,
+				B144306016D8383E00B7BB64 /* CampTypeView.m */,
 				B144306516D83A8B00B7BB64 /* Resources.h */,
+				B144306616D8AFC300B7BB64 /* CampListViewController.h */,
+				B144306716D8AFCB00B7BB64 /* CampListViewController.m */,
+				B144306816D8AFCF00B7BB64 /* CampListViewController.xib */,
 			);
 			path = CampsNearMe;
 			sourceTree = "<group>";
@@ -880,6 +888,7 @@
 				B144304F16D82A1900B7BB64 /* icn_place_pin@2x.png in Resources */,
 				B144305016D82A1900B7BB64 /* icn_search.png in Resources */,
 				B144305116D82A1900B7BB64 /* icn_search@2x.png in Resources */,
+				B144306A16D8AFD200B7BB64 /* CampListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,7 +903,8 @@
 				B1442EE516D8272F00B7BB64 /* CampAppDelegate.m in Sources */,
 				B1442F0816D828CB00B7BB64 /* CampTypeViewController.m in Sources */,
 				B1442F0D16D828F200B7BB64 /* CampFavoritesViewController.m in Sources */,
-				B144306116D8384100B7BB64 /* CampType.m in Sources */,
+				B144306116D8384100B7BB64 /* CampTypeView.m in Sources */,
+				B144306916D8AFD200B7BB64 /* CampListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

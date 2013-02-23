@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CampTypeView.h"
+#import "Resources.h"
+#import "CampListViewController.h"
 
-@interface CampTypeViewController : UIViewController
+@interface CampTypeViewController : UIViewController <CampTypeDelegate>
 
 @end
