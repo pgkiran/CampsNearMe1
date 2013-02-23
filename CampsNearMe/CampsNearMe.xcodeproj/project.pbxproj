@@ -178,8 +178,22 @@
 		B144305016D82A1900B7BB64 /* icn_search.png in Resources */ = {isa = PBXBuildFile; fileRef = B1442FB316D82A1900B7BB64 /* icn_search.png */; };
 		B144305116D82A1900B7BB64 /* icn_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1442FB416D82A1900B7BB64 /* icn_search@2x.png */; };
 		B144306116D8384100B7BB64 /* CampTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B144306016D8383E00B7BB64 /* CampTypeView.m */; };
-		B144306916D8AFD200B7BB64 /* CampListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B144306716D8AFCB00B7BB64 /* CampListViewController.m */; };
-		B144306A16D8AFD200B7BB64 /* CampListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B144306816D8AFCF00B7BB64 /* CampListViewController.xib */; };
+		B144306C16D8BEBD00B7BB64 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144306B16D8BEBD00B7BB64 /* Parse.framework */; };
+		B144306E16D8BEEA00B7BB64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144306D16D8BEE800B7BB64 /* AudioToolbox.framework */; };
+		B144307016D8BEF300B7BB64 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144306F16D8BEF100B7BB64 /* Accounts.framework */; };
+		B144307C16D8BF7B00B7BB64 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307116D8BF6300B7BB64 /* AdSupport.framework */; };
+		B144307D16D8BF7B00B7BB64 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307216D8BF6400B7BB64 /* CFNetwork.framework */; };
+		B144307E16D8BF7B00B7BB64 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307316D8BF6600B7BB64 /* CoreLocation.framework */; };
+		B144307F16D8BF7B00B7BB64 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307416D8BF6900B7BB64 /* libsqlite3.dylib */; };
+		B144308016D8BF7B00B7BB64 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307516D8BF6B00B7BB64 /* libz.1.1.3.dylib */; };
+		B144308116D8BF7B00B7BB64 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307616D8BF6D00B7BB64 /* MobileCoreServices.framework */; };
+		B144308216D8BF7B00B7BB64 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307716D8BF7000B7BB64 /* QuartzCore.framework */; };
+		B144308316D8BF7B00B7BB64 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307816D8BF7200B7BB64 /* Security.framework */; };
+		B144308416D8BF7B00B7BB64 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307916D8BF7500B7BB64 /* Social.framework */; };
+		B144308516D8BF7B00B7BB64 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307A16D8BF7700B7BB64 /* StoreKit.framework */; };
+		B144308616D8BF7B00B7BB64 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307B16D8BF7900B7BB64 /* SystemConfiguration.framework */; };
+		B144308E16D8C8DE00B7BB64 /* CampListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B144308D16D8C8CC00B7BB64 /* CampListViewController.m */; };
+		B144309116D8CE5000B7BB64 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B144309016D8CE4E00B7BB64 /* UserLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -362,9 +376,24 @@
 		B144305F16D8383B00B7BB64 /* CampTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampTypeView.h; sourceTree = "<group>"; };
 		B144306016D8383E00B7BB64 /* CampTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampTypeView.m; sourceTree = "<group>"; };
 		B144306516D83A8B00B7BB64 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
-		B144306616D8AFC300B7BB64 /* CampListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampListViewController.h; sourceTree = "<group>"; };
-		B144306716D8AFCB00B7BB64 /* CampListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampListViewController.m; sourceTree = "<group>"; };
-		B144306816D8AFCF00B7BB64 /* CampListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampListViewController.xib; sourceTree = "<group>"; };
+		B144306B16D8BEBD00B7BB64 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B144306D16D8BEE800B7BB64 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B144306F16D8BEF100B7BB64 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B144307116D8BF6300B7BB64 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B144307216D8BF6400B7BB64 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B144307316D8BF6600B7BB64 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B144307416D8BF6900B7BB64 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B144307516D8BF6B00B7BB64 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		B144307616D8BF6D00B7BB64 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B144307716D8BF7000B7BB64 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B144307816D8BF7200B7BB64 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B144307916D8BF7500B7BB64 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B144307A16D8BF7700B7BB64 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B144307B16D8BF7900B7BB64 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B144308C16D8C8C800B7BB64 /* CampListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampListViewController.h; path = ../CampListViewController.h; sourceTree = "<group>"; };
+		B144308D16D8C8CC00B7BB64 /* CampListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampListViewController.m; path = ../CampListViewController.m; sourceTree = "<group>"; };
+		B144308F16D8CE4A00B7BB64 /* UserLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
+		B144309016D8CE4E00B7BB64 /* UserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,9 +401,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B144307C16D8BF7B00B7BB64 /* AdSupport.framework in Frameworks */,
+				B144307D16D8BF7B00B7BB64 /* CFNetwork.framework in Frameworks */,
+				B144307E16D8BF7B00B7BB64 /* CoreLocation.framework in Frameworks */,
+				B144307F16D8BF7B00B7BB64 /* libsqlite3.dylib in Frameworks */,
+				B144308016D8BF7B00B7BB64 /* libz.1.1.3.dylib in Frameworks */,
+				B144308116D8BF7B00B7BB64 /* MobileCoreServices.framework in Frameworks */,
+				B144308216D8BF7B00B7BB64 /* QuartzCore.framework in Frameworks */,
+				B144308316D8BF7B00B7BB64 /* Security.framework in Frameworks */,
+				B144308416D8BF7B00B7BB64 /* Social.framework in Frameworks */,
+				B144308516D8BF7B00B7BB64 /* StoreKit.framework in Frameworks */,
+				B144308616D8BF7B00B7BB64 /* SystemConfiguration.framework in Frameworks */,
+				B144307016D8BEF300B7BB64 /* Accounts.framework in Frameworks */,
+				B144306E16D8BEEA00B7BB64 /* AudioToolbox.framework in Frameworks */,
+				B1442ED916D8272E00B7BB64 /* CoreGraphics.framework in Frameworks */,
 				B1442ED516D8272E00B7BB64 /* UIKit.framework in Frameworks */,
 				B1442ED716D8272E00B7BB64 /* Foundation.framework in Frameworks */,
-				B1442ED916D8272E00B7BB64 /* CoreGraphics.framework in Frameworks */,
+				B144306C16D8BEBD00B7BB64 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +427,19 @@
 		B1442EC516D8272E00B7BB64 = {
 			isa = PBXGroup;
 			children = (
+				B144307116D8BF6300B7BB64 /* AdSupport.framework */,
+				B144307216D8BF6400B7BB64 /* CFNetwork.framework */,
+				B144307316D8BF6600B7BB64 /* CoreLocation.framework */,
+				B144307416D8BF6900B7BB64 /* libsqlite3.dylib */,
+				B144307516D8BF6B00B7BB64 /* libz.1.1.3.dylib */,
+				B144307616D8BF6D00B7BB64 /* MobileCoreServices.framework */,
+				B144307716D8BF7000B7BB64 /* QuartzCore.framework */,
+				B144307816D8BF7200B7BB64 /* Security.framework */,
+				B144307916D8BF7500B7BB64 /* Social.framework */,
+				B144307A16D8BF7700B7BB64 /* StoreKit.framework */,
+				B144307B16D8BF7900B7BB64 /* SystemConfiguration.framework */,
+				B144306F16D8BEF100B7BB64 /* Accounts.framework */,
+				B144306D16D8BEE800B7BB64 /* AudioToolbox.framework */,
 				B1442EDA16D8272E00B7BB64 /* CampsNearMe */,
 				B1442ED316D8272E00B7BB64 /* Frameworks */,
 				B1442ED116D8272E00B7BB64 /* Products */,
@@ -401,6 +457,7 @@
 		B1442ED316D8272E00B7BB64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B144306B16D8BEBD00B7BB64 /* Parse.framework */,
 				B1442ED416D8272E00B7BB64 /* UIKit.framework */,
 				B1442ED616D8272E00B7BB64 /* Foundation.framework */,
 				B1442ED816D8272E00B7BB64 /* CoreGraphics.framework */,
@@ -411,6 +468,10 @@
 		B1442EDA16D8272E00B7BB64 /* CampsNearMe */ = {
 			isa = PBXGroup;
 			children = (
+				B144308C16D8C8C800B7BB64 /* CampListViewController.h */,
+				B144308D16D8C8CC00B7BB64 /* CampListViewController.m */,
+				B144308F16D8CE4A00B7BB64 /* UserLocationManager.h */,
+				B144309016D8CE4E00B7BB64 /* UserLocationManager.m */,
 				B1442F0F16D82A1900B7BB64 /* Resources */,
 				B1442EE316D8272E00B7BB64 /* CampAppDelegate.h */,
 				B1442EE416D8272F00B7BB64 /* CampAppDelegate.m */,
@@ -424,9 +485,6 @@
 				B144305F16D8383B00B7BB64 /* CampTypeView.h */,
 				B144306016D8383E00B7BB64 /* CampTypeView.m */,
 				B144306516D83A8B00B7BB64 /* Resources.h */,
-				B144306616D8AFC300B7BB64 /* CampListViewController.h */,
-				B144306716D8AFCB00B7BB64 /* CampListViewController.m */,
-				B144306816D8AFCF00B7BB64 /* CampListViewController.xib */,
 			);
 			path = CampsNearMe;
 			sourceTree = "<group>";
@@ -888,7 +946,6 @@
 				B144304F16D82A1900B7BB64 /* icn_place_pin@2x.png in Resources */,
 				B144305016D82A1900B7BB64 /* icn_search.png in Resources */,
 				B144305116D82A1900B7BB64 /* icn_search@2x.png in Resources */,
-				B144306A16D8AFD200B7BB64 /* CampListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,7 +961,8 @@
 				B1442F0816D828CB00B7BB64 /* CampTypeViewController.m in Sources */,
 				B1442F0D16D828F200B7BB64 /* CampFavoritesViewController.m in Sources */,
 				B144306116D8384100B7BB64 /* CampTypeView.m in Sources */,
-				B144306916D8AFD200B7BB64 /* CampListViewController.m in Sources */,
+				B144308E16D8C8DE00B7BB64 /* CampListViewController.m in Sources */,
+				B144309116D8CE5000B7BB64 /* UserLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +1033,10 @@
 		B1442F0316D8272F00B7BB64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CampsNearMe/CampsNearMe-Prefix.pch";
 				INFOPLIST_FILE = "CampsNearMe/CampsNearMe-Info.plist";
@@ -986,6 +1048,10 @@
 		B1442F0416D8272F00B7BB64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CampsNearMe/CampsNearMe-Prefix.pch";
 				INFOPLIST_FILE = "CampsNearMe/CampsNearMe-Info.plist";

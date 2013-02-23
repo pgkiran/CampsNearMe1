@@ -12,13 +12,17 @@
 
 #import "CampFavoritesViewController.h"
 
+#import <Parse/Parse.h>
+#import "UserLocationManager.h"
 @implementation CampAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     
+    // Override point for customization after application launch.
+#warning HIDE keys
+        [UserLocationManager sharedInstance];
     UIViewController *viewController1 = [[CampTypeViewController alloc] initWithNibName:@"CampTypeViewController" bundle:nil];
     UIViewController *viewController2 = [[CampFavoritesViewController alloc] initWithNibName:@"CampFavoritesViewController" bundle:nil];
     UINavigationController *browseNavController = [[UINavigationController alloc] initWithRootViewController:viewController1];
