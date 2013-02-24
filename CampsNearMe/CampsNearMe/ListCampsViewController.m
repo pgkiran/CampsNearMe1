@@ -25,12 +25,56 @@
         [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
         UIScrollView *campTypeScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,320,31)];
         campTypeScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_slidebar"]];
+        campTypeScrollView.contentSize=CGSizeMake(700, 31);
+        for( int i = 1; i <= 9; i++ ) {
+            UIButton* aButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            [aButton setTag:i];
+            [aButton setTitle:[self campTypeString:i] forState:UIControlStateNormal];
+            [aButton addTarget:self action:@selector(changeType:) forControlEvents:UIControlEventTouchUpInside];
+            aButton.frame = CGRectMake((i-1)*75, 0, 75, 31);
+            if(i==1)
+            {
+                aButton.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"btn_slidebar_active"]];
+                aButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:14];
+                aButton.titleLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha: 0.6];
+                
+            }else{
+                aButton.backgroundColor=[UIColor clearColor];
+                aButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:14];
+                aButton.titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha: 0.6];
+
+            }
+            [campTypeScrollView addSubview:aButton];
+        }
         self.tableView.tableHeaderView = campTypeScrollView;
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_main"]];
-
+        self.navigationItem.title=@"Camps";
         
     }
     return self;
+}
+- (void)changeType:(UIButton*)button
+{
+    int tempCampType = [button tag];
+
+
+    for( int i = 1; i <= 9; i++ ) {
+        UIButton *tempCampBtn = (UIButton *)[self.view viewWithTag:i];
+        if(tempCampType==i)
+        {
+            tempCampBtn.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"btn_slidebar_active"]];
+            tempCampBtn.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:14];
+            tempCampBtn.titleLabel.textColor = [UIColor colorWithRed:255 green:255 blue:255 alpha: 0.6];
+        }
+        else
+        {
+            tempCampBtn.backgroundColor=[UIColor clearColor];
+           tempCampBtn.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:14];
+            tempCampBtn.titleLabel.textColor = [UIColor colorWithRed:0 green:0 blue:0 alpha: 0.6];
+        }
+        
+    }
+        [self setCampType:tempCampType];
 }
 -(void) setCampType:(int)campType
 {
@@ -43,7 +87,7 @@
     [query whereKey:@"Location" nearGeoPoint:userPoint withinMiles:50];
     
     self.camps= [query findObjects];
-   
+    [self.tableView reloadData];
 }
 -(NSString *)campTypeString:(int)type
 {

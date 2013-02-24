@@ -26,6 +26,8 @@
 -(void) setCamp:(PFObject *)camp
 {
     _camp = camp;
+    self.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_listsbar_active"]];
+
     self.campImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[camp valueForKey:@"Logo"]]]];
     self.campImage.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"ava_listsbar_default"]];
     self.campImage.layer.cornerRadius = 6.0;

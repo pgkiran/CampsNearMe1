@@ -22,6 +22,8 @@
     
     // Override point for customization after application launch.
 #warning HIDE keys
+    [Parse setApplicationId:@"6DxRmV3Lz1Ap3deioF7dqzWiihP6VMpOtVPhlnK7"
+                  clientKey:@"K5GoF0fxxdFfTV5dQWZpxnmVyWjxXMe9ZvsOwoU2"];
         [UserLocationManager sharedInstance];
     UIViewController *viewController1 = [[CampTypeViewController alloc] initWithNibName:@"CampTypeViewController" bundle:nil];
     UIViewController *viewController2 = [[CampFavoritesViewController alloc] initWithNibName:@"CampFavoritesViewController" bundle:nil];
