@@ -192,8 +192,11 @@
 		B144308416D8BF7B00B7BB64 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307916D8BF7500B7BB64 /* Social.framework */; };
 		B144308516D8BF7B00B7BB64 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307A16D8BF7700B7BB64 /* StoreKit.framework */; };
 		B144308616D8BF7B00B7BB64 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144307B16D8BF7900B7BB64 /* SystemConfiguration.framework */; };
-		B144308E16D8C8DE00B7BB64 /* CampListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B144308D16D8C8CC00B7BB64 /* CampListViewController.m */; };
 		B144309116D8CE5000B7BB64 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B144309016D8CE4E00B7BB64 /* UserLocationManager.m */; };
+		B144309416D97A4000B7BB64 /* CampListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B144309316D97A3D00B7BB64 /* CampListItemCell.m */; };
+		B144309A16D97EAF00B7BB64 /* CampListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B144309916D97E9B00B7BB64 /* CampListItemCell.xib */; };
+		B14430A116D99F0300B7BB64 /* ListCampsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B144309F16D99E3300B7BB64 /* ListCampsViewController.m */; };
+		B14430A216D99F0300B7BB64 /* ListCampsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14430A016D99E7C00B7BB64 /* ListCampsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -390,10 +393,14 @@
 		B144307916D8BF7500B7BB64 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B144307A16D8BF7700B7BB64 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B144307B16D8BF7900B7BB64 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B144308C16D8C8C800B7BB64 /* CampListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampListViewController.h; path = ../CampListViewController.h; sourceTree = "<group>"; };
-		B144308D16D8C8CC00B7BB64 /* CampListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampListViewController.m; path = ../CampListViewController.m; sourceTree = "<group>"; };
 		B144308F16D8CE4A00B7BB64 /* UserLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
 		B144309016D8CE4E00B7BB64 /* UserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
+		B144309216D97A3800B7BB64 /* CampListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampListItemCell.h; sourceTree = "<group>"; };
+		B144309316D97A3D00B7BB64 /* CampListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampListItemCell.m; sourceTree = "<group>"; };
+		B144309916D97E9B00B7BB64 /* CampListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampListItemCell.xib; sourceTree = "<group>"; };
+		B144309E16D99E1D00B7BB64 /* ListCampsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCampsViewController.h; sourceTree = "<group>"; };
+		B144309F16D99E3300B7BB64 /* ListCampsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCampsViewController.m; sourceTree = "<group>"; };
+		B14430A016D99E7C00B7BB64 /* ListCampsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCampsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,8 +475,6 @@
 		B1442EDA16D8272E00B7BB64 /* CampsNearMe */ = {
 			isa = PBXGroup;
 			children = (
-				B144308C16D8C8C800B7BB64 /* CampListViewController.h */,
-				B144308D16D8C8CC00B7BB64 /* CampListViewController.m */,
 				B144308F16D8CE4A00B7BB64 /* UserLocationManager.h */,
 				B144309016D8CE4E00B7BB64 /* UserLocationManager.m */,
 				B1442F0F16D82A1900B7BB64 /* Resources */,
@@ -485,6 +490,12 @@
 				B144305F16D8383B00B7BB64 /* CampTypeView.h */,
 				B144306016D8383E00B7BB64 /* CampTypeView.m */,
 				B144306516D83A8B00B7BB64 /* Resources.h */,
+				B144309916D97E9B00B7BB64 /* CampListItemCell.xib */,
+				B144309216D97A3800B7BB64 /* CampListItemCell.h */,
+				B144309316D97A3D00B7BB64 /* CampListItemCell.m */,
+				B144309E16D99E1D00B7BB64 /* ListCampsViewController.h */,
+				B144309F16D99E3300B7BB64 /* ListCampsViewController.m */,
+				B14430A016D99E7C00B7BB64 /* ListCampsViewController.xib */,
 			);
 			path = CampsNearMe;
 			sourceTree = "<group>";
@@ -946,6 +957,8 @@
 				B144304F16D82A1900B7BB64 /* icn_place_pin@2x.png in Resources */,
 				B144305016D82A1900B7BB64 /* icn_search.png in Resources */,
 				B144305116D82A1900B7BB64 /* icn_search@2x.png in Resources */,
+				B144309A16D97EAF00B7BB64 /* CampListItemCell.xib in Resources */,
+				B14430A216D99F0300B7BB64 /* ListCampsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,8 +974,9 @@
 				B1442F0816D828CB00B7BB64 /* CampTypeViewController.m in Sources */,
 				B1442F0D16D828F200B7BB64 /* CampFavoritesViewController.m in Sources */,
 				B144306116D8384100B7BB64 /* CampTypeView.m in Sources */,
-				B144308E16D8C8DE00B7BB64 /* CampListViewController.m in Sources */,
 				B144309116D8CE5000B7BB64 /* UserLocationManager.m in Sources */,
+				B144309416D97A4000B7BB64 /* CampListItemCell.m in Sources */,
+				B14430A116D99F0300B7BB64 /* ListCampsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1079,6 +1093,7 @@
 				B1442F0416D8272F00B7BB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

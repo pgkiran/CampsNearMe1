@@ -7,6 +7,7 @@
 //
 
 #import "CampTypeViewController.h"
+#import "ListCampsViewController.h"
 #import <Parse/Parse.h>
 @interface CampTypeViewController ()
 
@@ -91,7 +92,8 @@
 
 -(void) listOfCamps:(int)campType
 {
-    CampListViewController *campListViewController = [[CampListViewController alloc] initWithStyle:UITableViewStylePlain];
+    ListCampsViewController *campListViewController = [[ListCampsViewController alloc] initWithStyle:UITableViewStylePlain];
+    campListViewController.campType=campType;
     [self.navigationController pushViewController:campListViewController animated:YES];
     
 }

@@ -8,6 +8,7 @@
 
 #import "CampListViewController.h"
 #import "UserLocationManager.h"
+#import "CampListItemCell.h"
 @interface CampListViewController ()
 
 @end
@@ -36,10 +37,18 @@
         
         // The number of objects to show per page
         self.objectsPerPage = 25;
+        UIImage *backButtonImage = [[UIImage imageNamed:@"btn_back_navbar_active"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 13, 0, 6)];
+        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        UIScrollView *campTypeScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,320,31)];
+        campTypeScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_slidebar"]];
+         self.tableView.tableHeaderView = campTypeScrollView;
+         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_main"]];
     }
     return self;
 }
-
+-(void)pushNav {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -133,25 +142,25 @@
  }
 
 
-/*
+
  // Override to customize the look of a cell representing an object. The default is to display
  // a UITableViewCellStyleDefault style cell with the label being the textKey in the object,
  // and the imageView being the imageKey in the object.
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
- static NSString *CellIdentifier = @"Cell";
+ static NSString *CellIdentifier = @"CampListItemCell";
  
- PFTableViewCell *cell = (PFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+ CampListItemCell *cell = (CampListItemCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
  if (cell == nil) {
- cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+ cell = [[CampListItemCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
  }
- 
+
  // Configure the cell
- cell.textLabel.text = [object objectForKey:self.textKey];
- cell.imageView.file = [object objectForKey:self.imageKey];
+// cell.textLabel.text = [object objectForKey:self.textKey];
+ //cell.imageView.file = [object objectForKey:self.imageKey];
  
  return cell;
  }
- */
+
 
 /*
  // Override if you need to change the ordering of objects in the table.
